@@ -4,8 +4,10 @@ services:
     ports:
       - "7860:7860"
     environment:
+      # 환경 변수를 직접 설정하거나 .env 파일 사용
       - PYTHONUNBUFFERED=1
       - PYTHONPATH=/app
+      # - OPENAI_API_KEY=${OPENAI_API_KEY}
     env_file:
       - .env
     volumes:
